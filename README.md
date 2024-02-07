@@ -23,7 +23,15 @@ The Go Web Application: Bookstore Management System is a web-based application b
 
 ## Introduction
 
-Provide a brief overview of the project, its purpose, and its goals.
+The Bookstore Management System is a web application designed to streamline bookstore operations by providing tools for inventory management, sales tracking, and customer interactions. It offers features for adding, updating, and deleting books, as well as listing available books and viewing detailed information about each book. The system includes user authentication and authorization for secure access, along with functionalities such as filtering, sorting, and pagination to enhance user experience.
+
+**Purpose and Goals:**
+- Efficiently manage book inventory, sales, and revenue tracking.
+- Provide a user-friendly interface for bookstore staff.
+- Implement security measures for data protection.
+- Enhance user experience with filtering, sorting, and pagination.
+- Ensure system stability and reliability through error handling and structured logging.
+- Implement rate limiting to prevent overload and graceful shutdown for proper termination of operations.
 
 ## Features
 
