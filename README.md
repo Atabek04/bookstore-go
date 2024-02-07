@@ -1,6 +1,10 @@
 # Go Web Application: Bookstore Management System
 
+<img src="screenshots/view.png">
+
 The Go Web Application: Bookstore Management System is a web-based application built using Go programming language. It provides functionalities for managing a bookstore, including adding, updating, and deleting books, user authentication, filtering books by various criteria, sorting them, and displaying them in paginated views. The system ensures stable operation through structured logging, error handling, rate limiting, and graceful shutdown mechanisms. It aims to provide a seamless user experience while efficiently managing bookstore operations.
+<img src="screenshots/admin.png">
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -25,7 +29,11 @@ Provide a brief overview of the project, its purpose, and its goals.
 
 ### Filtering
 
+
+
 The system allows users to filter data based on specific criteria. For example, users can filter books by genre, publication date, or author name. This functionality helps users to narrow down search results and find relevant information more efficiently.
+
+<img src="screenshots/filter.png">
 
 ```go
 func handleListProducts(w http.ResponseWriter, r *http.Request) {
@@ -59,6 +67,8 @@ func handleListProducts(w http.ResponseWriter, r *http.Request) {
 
 Allow users to sort data in ascending or descending order based on certain attributes. For example:
 
+<img src="screenshots/sort.png">
+
 ```go
 // Example sorting by price in ascending order
 http.HandleFunc("/products", func(w http.ResponseWriter, r *http.Request) {
@@ -71,6 +81,9 @@ http.HandleFunc("/products", func(w http.ResponseWriter, r *http.Request) {
 ```
 ### Pagination
 Pagination enhances user experience by breaking down large datasets into multiple pages, allowing users to navigate through the data more efficiently.
+
+<img src="screenshots/pagination.png">
+
 ```go
 func handleListProducts(w http.ResponseWriter, r *http.Request) {
     // Retrieve pagination parameters from the URL
@@ -101,6 +114,8 @@ func handleListProducts(w http.ResponseWriter, r *http.Request) {
 
 ### Authentication and Authorization
 Implement authentication and authorization to control access to resources and ensure secure interactions within the system
+
+<img src="screenshots/signup.png">
 
 #### Authentication
 Authenticate users to verify their identities before granting access to protected resources. This involves validating user credentials such as username and password.
